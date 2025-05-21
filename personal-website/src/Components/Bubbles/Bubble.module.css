@@ -1,0 +1,82 @@
+.bubbles {
+    position: fixed;
+    top: 140px;
+}
+
+.bubbles {
+    display: flex;
+    opacity: 0.2;
+    filter: blur(10rem);
+}
+
+.one, .two, .three {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;  
+}
+
+.one {
+    background-color: #950689;
+    animation: oneBounce 5s 0s infinite alternate;
+    
+}
+
+
+.two {
+    background-color: #8d7dfa;
+    animation: twoBounce 5s 1s infinite alternate;
+}
+
+.three {
+    background-color: #f61694;
+    animation: threeBounce 5s 2s infinite alternate;
+}
+
+@keyframes oneBounce {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(75px, 0px) scale(1.2);
+    }
+     66% {
+        transform: translate(75px, 25px) scale(1);
+    }
+     100% {
+        transform: translate(50px, 25px) scale(1.2);
+    }
+    
+}
+
+@keyframes twoBounce {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(25px, 0px) scale(1.2);
+    }
+     66% {
+        transform: translate(25px, 25px) scale(1);
+    }
+     100% {
+        transform: translate(0px, 25px) scale(1.2);
+    }
+    
+}
+
+@keyframes threeBounce {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(-75px, 0px) scale(1.2);
+    }
+     66% {
+        transform: translate(-75px, 25px) scale(1);
+    }
+     100% {
+        transform: translate(-50px, 25px) scale(1.2);
+    }
+    
+}

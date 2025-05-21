@@ -1,0 +1,35 @@
+.image {
+  margin-top: 5px;
+  width: 30%;
+  height: 85%;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.techTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  font-size: x-large;
+}
+
+.techTitleHeader {
+  font-weight: 900;
+}
+
+.techHolderOne {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.techHolderTwo {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}

@@ -1,0 +1,68 @@
+.header {
+    margin-top: 90px;
+    padding-top: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size:55px;
+    font-weight: 800;
+}
+
+span {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+
+.cs {
+    background: linear-gradient(to right, #950689, #8d7dfa, #f61694, #950689);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 10s ease-in-out infinite;
+}
+
+@keyframes animate-gradient{
+    to {
+        background-position: 200%;
+    }
+}
+
+.greeting {
+    margin-top: 20px;
+}
+
+p {
+    font-size: medium;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+
+.buttons {
+    display: flex;
+    box-sizing: content-box;
+    
+}
+
+button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 30px;
+    background-color: hsl(250, 31%, 15%);
+    border-radius: 20px;
+    border-color: #8d7dfa;
+    position: relative;
+    box-sizing: content-box;
+}
+
+

@@ -1,0 +1,25 @@
+.card {
+  width: 250px;
+  height: 60px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  border: 2px #8d7dfa solid;
+  border-radius: 13px;
+  background-color: hsl(250, 31%, 15%);
+  position: relative;
+}
+
+ 
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  position: absolute;
+  left: 57%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(250, 31%, 15%);
+}
+
+
+

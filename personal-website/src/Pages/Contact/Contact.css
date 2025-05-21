@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.body {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,85 @@
+
+
+.navbar { 
+    display: flex;
+    justify-content: center;
+    margin-top: 25px; 
+    background-color: transparent;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1; 
+    
+}
+
+.visible {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.elements {
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1f1b33;
+    box-sizing: content-box;
+    
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.elements::after,
+.elements::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: conic-gradient(from var(--angle), #8d7dfa, #950689, #f61694, #8d7dfa);
+    border-radius: 22px; /* 2px more than .elements' 20px */
+    animation: 3s spin linear infinite;
+    z-index: -1;
+}
+
+.elements::before{
+    filter: blur(2rem);
+    opacity: 0.5;
+}
+ 
+@keyframes spin{
+    form {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+
+.link {
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: 500;
+    background-color: #1f1b33;
+}
+
+
+
+
+
+
+
+
